@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-BR">
+	<head>
+		<title>Partidas - Arena 90</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Estilização personalizada para a seção de Partidas */
+			.rodada-container {
+				margin-top: 2em;
+			}
+			.rodada-titulo {
+				text-align: center;
+				font-size: 1.5em;
+				font-weight: 700;
+				color: #3d4449;
+				margin-bottom: 1.5em;
+				border-bottom: 2px solid #6e61e3; /* Roxo personalizado */
+				padding-bottom: 0.5em;
+			}
+			.card-partida {
+				background: #ffffff;
+				border-radius: 8px;
+				box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+				margin-bottom: 1.2em;
+				padding: 1.5em;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				border-left: 5px solid #6e61e3; /* Roxo personalizado */
+			}
+			.partida-info {
+				font-size: 0.8em;
+				color: #7f888f;
+				margin-bottom: 0.8em;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.confronto-container {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				max-width: 600px;
+			}
+			.time-box {
+				flex: 1;
+				text-align: center;
+				font-weight: 700;
+				color: #3d4449;
+				font-size: 1.1em;
+			}
+			.placar-box {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: #f4f6f9;
+				padding: 0.5em 1em;
+				border-radius: 6px;
+				margin: 0 1.5em;
+				min-width: 100px;
+			}
+			.gols {
+				font-size: 1.6em;
+				font-weight: 800;
+				color: #3d4449;
+			}
+			.vs {
+				font-size: 0.9em;
+				color: #7f888f;
+				margin: 0 0.5em;
+				font-weight: 600;
+			}
+			.partida-status {
+				margin-top: 0.8em;
+				font-size: 0.85em;
+				font-weight: 600;
+				padding: 3px 10px;
+				border-radius: 20px;
+			}
+			.status-encerrado {
+				background-color: #eef2f5;
+				color: #7f888f;
+			}
+			.status-ao-vivo {
+				background-color: #ffe6e6;
+				color: #f56a6a;
+				animation: piscar 1.5s infinite;
+			}
+			.status-agendado {
+				background-color: #e6f7ff;
+				color: #6e61e3;
+			}
+			@keyframes piscar {
+				0% { opacity: 1; }
+				50% { opacity: 0.5; }
+				100% { opacity: 1; }
+			}
+			@media (max-width: 480px) {
+				.confronto-container { flex-direction: column; }
+				.placar-box { margin: 0.5em 0; }
+				.time-box { margin: 0.3em 0; }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main (Conteúdo Principal com as Partidas) -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Arena 90</strong> por HTML5 UP</a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Jogos e Partidas</h1>
+									</header>
+
+									<p>Fique por dentro dos resultados recentes e dos próximos confrontos do campeonato.</p>
+
+									<!-- Container de Rodadas -->
+									<div class="rodada-container">
+										<div class="rodada-titulo">Rodada Atual</div>
+
+										<!-- Partida 1: Encerrada -->
+										<div class="card-partida">
+											<div class="partida-info">Ontem — Maracanã</div>
+											<div class="confronto-container">
+												<div class="time-box">Flamengo</div>
+												<div class="placar-box">
+													<span class="gols">2</span>
+													<span class="vs">x</span>
+													<span class="gols">1</span>
+												</div>
+												<div class="time-box">Palmeiras</div>
+											</div>
+											<div class="partida-status status-encerrado">Encerrado</div>
+										</div>
+
+										<!-- Partida 2: Ao Vivo -->
+										<div class="card-partida" style="border-left-color: #f56a6a;">
+											<div class="partida-info">Hoje — Mineirão</div>
+											<div class="confronto-container">
+												<div class="time-box">Cruzeiro</div>
+												<div class="placar-box">
+													<span class="gols">0</span>
+													<span class="vs">x</span>
+													<span class="gols">0</span>
+												</div>
+												<div class="time-box">Atlético-MG</div>
+											</div>
+											<div class="partida-status status-ao-vivo">● AO VIVO</div>
+										</div>
+
+										<!-- Partida 3: Próximo Jogo -->
+										<div class="card-partida">
+											<div class="partida-info">Amanhã — Neo Química Arena</div>
+											<div class="confronto-container">
+												<div class="time-box">Corinthians</div>
+												<div class="placar-box">
+													<span class="gols">-</span>
+													<span class="vs">x</span>
+													<span class="gols">-</span>
+												</div>
+												<div class="time-box">São Paulo</div>
+											</div>
+											<div class="partida-status status-agendado">Próximo Jogo</div>
+										</div>
+
+										<!-- Partida 4: Próximo Jogo -->
+										<div class="card-partida">
+											<div class="partida-info">Sábado — Beira-Rio</div>
+											<div class="confronto-container">
+												<div class="time-box">Internacional</div>
+												<div class="placar-box">
+													<span class="gols">-</span>
+													<span class="vs">x</span>
+													<span class="gols">-</span>
+												</div>
+												<div class="time-box">Grêmio</div>
+											</div>
+											<div class="partida-status status-agendado">Próximo Jogo</div>
+										</div>
+
+									</div>
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar (Menu Lateral Identico ao das outras páginas) -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Menu de Navegação -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Início</a></li>
+										<li><a href="times.html">Times</a></li>
+										<li><a href="tabela.html">Tabela</a></li>
+										<li><a href="partidas.html">Partidas</a></li>
+										<li><a href="galeria.html">Galeria</a></li>
+										<li><a href="contato.html">Contato</a></li>
+									</ul>
+								</nav>
+
+							<!-- Seção de Mais Notícias (Com correção para as fotos) -->
+								<section>
+									<header class="major">
+										<h2>Mais Notícias</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/bets.jpg" alt="Bets no Futebol" /></a>
+											<p>Veja como a proibição das bets está impactando o futebol brasileiro.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Diário espanhol repercute atuação de Cristiano Ronaldo, que desperdiçou pênalti e chance sem goleiro.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Bola de Ouro divulga votação de maior da história com Messi e sem Pelé.</p>
+										</article>
+									</div>
+								</section>
+
+							<!-- Informações de Contato -->
+								<section>
+									<header class="major">
+										<h2>Fale Conosco</h2>
+									</header>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="mailto:arena90@gmail.com">arena90@gmail.com</a></li>
+										<li class="icon solid fa-phone">(67) 6767-6767</li>
+										<li class="icon solid fa-home">291 Rua Belterra, Santo Amaro</li>
+									</ul>
+								</section>
+
+							<!-- Rodapé -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts padrão do template Editorial -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
